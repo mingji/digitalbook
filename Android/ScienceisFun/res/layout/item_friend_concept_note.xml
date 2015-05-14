@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dip"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="7dip"
+        android:background="@drawable/repo_content_grayborder" >
+
+        <LinearLayout
+            android:id="@+id/layNoteUser1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="7dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.belwadi.sciencefun.view.HyIconView
+                android:id="@+id/imgNoteUser"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:gravity="center"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtNoteUserName"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="Belwadi Srikanth"
+                android:textColor="@color/darkgray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNoteDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/layNoteUser1"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@+id/layNoteUser1"
+            android:text="12 Sep 2014"
+            android:textColor="@color/darkgray"
+            android:textSize="12sp" />
+
+        <com.belwadi.sciencefun.view.AutosizeTextView
+            android:id="@+id/txtNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtNoteDate"
+            android:layout_below="@+id/txtNoteDate"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:paddingBottom="7dip"
+            android:paddingTop="7dip"
+            android:singleLine="false"
+            android:text="CELL DIVISION\nThis is mynotes about a feild trip where we went to a labaratory and observed cell division through microscope."
+            android:textColor="@color/darkgray"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgInvite"
+        android:layout_width="28dip"
+        android:layout_height="28dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="15dip"
+        android:src="@drawable/icon_invite" />
+
+</RelativeLayout>

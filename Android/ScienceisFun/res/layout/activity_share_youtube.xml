@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dip"
+    android:layout_height="wrap_content"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darekgreen"        
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dip"
+            android:background="@color/white"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="12dip"
+            android:text="ScienceisFun Video"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:gravity="left"
+        android:singleLine="false"
+        android:layout_marginTop="15dip"
+        android:text="Do you want to copy the video url to the clipboard?"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:gravity="left"
+            android:singleLine="false"
+            android:text="URL:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/txtUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:inputType="textUri"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grayborder"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/grayborder"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCopy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/grayborder"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Copy"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

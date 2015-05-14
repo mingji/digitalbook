@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/title_home" >
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="40dip"
+        android:layout_height="30dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/layCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/btnMenu"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5th Grade"
+            android:textColor="@color/darkgray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/txtSyllabus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karanataka State"
+            android:textColor="@color/darkgray"
+            android:textSize="13sp" />
+        
+    </LinearLayout>
+
+    <com.belwadi.sciencefun.view.HyIconView
+        android:id="@+id/imgUserIcon"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dip"
+        android:src="@drawable/guest_g" />
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="90dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnMenu"
+        android:layout_marginRight="7dip"
+        android:layout_toLeftOf="@+id/imgUserIcon"
+        android:singleLine="true"
+        android:gravity="right"
+        android:ellipsize="end"
+        android:text="@string/guest"
+        android:textColor="@color/title_name"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+
+        <com.belwadi.sciencefun.view.HyIconView
+            android:id="@+id/imgVideoThumb"
+            android:layout_width="110dip"
+            android:layout_height="90dip"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/imgAdd"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/icon_invite" />
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_delete"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgTick"
+                android:layout_width="25dip"
+                android:layout_height="20dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_tick" />
+        </com.belwadi.sciencefun.view.HyIconView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layVideoInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtVideoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/txtVideoUploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="By --"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/txtViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:singleLine="true"
+            android:ellipsize="end"            
+            android:text="-- Views"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

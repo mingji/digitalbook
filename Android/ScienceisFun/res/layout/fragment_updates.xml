@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/icon_down" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btnSort"
+        android:layout_alignBaseline="@+id/btnSort"
+        android:layout_marginRight="8dip"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/lstUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnSort"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#00000000"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>

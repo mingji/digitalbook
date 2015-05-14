@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/layGuestMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laytopTitle"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/repo_content_grayborder"
+        android:padding="7.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txtGuestMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="You have not enrolled in any class. \nSign in  or  Sign up for Free"
+            android:textColor="@color/darkgray"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dip"
+                android:background="@color/transparent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/layProfileShow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/background_gray"
+                    android:visibility="visible" >
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/view_profile_show" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layProfileEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/layProfileShow"
+                    android:background="@color/background_gray"
+                    android:visibility="gone" >
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/view_profile_edit" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/labelOldPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layProfileEdit"
+                    android:layout_marginTop="30dip"
+                    android:text="Old Password : "
+                    android:textColor="@color/darkgray"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/txtOldPwd"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/labelOldPwd"
+                    android:layout_marginLeft="30dip"
+                    android:layout_toRightOf="@+id/labelOldPwd"
+                    android:editable="true"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/labelNewPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelOldPwd"
+                    android:layout_marginTop="30dip"
+                    android:text="New Password : "
+                    android:textColor="@color/darkgray"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/txtNewPwd"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/labelNewPwd"
+                    android:layout_alignLeft="@+id/txtOldPwd"
+                    android:layout_toRightOf="@+id/labelNewPwd"
+                    android:editable="true"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/labelConfirmPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelNewPwd"
+                    android:layout_marginTop="30dip"
+                    android:text="Confirm Password : "
+                    android:textColor="@color/darkgray"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/txtConfirmPwd"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/labelConfirmPwd"
+                    android:layout_alignLeft="@+id/txtOldPwd"
+                    android:layout_toRightOf="@+id/labelConfirmPwd"
+                    android:editable="true"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnChangePwd"
+                    android:layout_width="160dip"
+                    android:layout_height="35dip"
+                    android:layout_alignRight="@+id/txtNewPwd"
+                    android:layout_below="@+id/labelConfirmPwd"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/btn_signup"
+                    android:text="Change Password"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:layout_below="@+id/btnChangePwd" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

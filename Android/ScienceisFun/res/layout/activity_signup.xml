@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/laytopTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_home" >
+
+        <Button
+            android:id="@+id/btnLogo"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/btnLogo"
+            android:text="Science Is Fun"
+            android:textColor="@color/title_logo"
+            android:textSize="24sp" />
+
+        <com.belwadi.sciencefun.view.HyIconView
+            android:id="@+id/imgUserIcon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dip"
+            android:src="@drawable/guest_g" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnLogo"
+            android:layout_marginRight="7dip"
+            android:layout_toLeftOf="@+id/imgUserIcon"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:text="@string/guest"
+            android:textColor="@color/title_name"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layStepNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laytopTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dip"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/title_signup"
+            android:textColor="@color/grade_orange"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtSignStepNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/grade_orange"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" of 4"
+            android:textColor="@color/grade_orange"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/laySignupDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layBottom"
+        android:layout_below="@+id/layStepNum"
+        android:background="@color/background_gray" >
+
+        <RelativeLayout
+            android:id="@+id/viewSignupStep1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background_gray"
+            android:visibility="visible" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_signup_step1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewSignupStep2_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background_gray"
+            android:visibility="gone" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_signup_step2_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewSignupStep2_2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background_gray"
+            android:visibility="gone" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_signup_step2_2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewSignupStep3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background_gray"
+            android:visibility="gone" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_signup_step3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewSignupStep4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background_gray"
+            android:visibility="gone" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_signup_step4" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewSignupFinal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background_gray"
+            android:visibility="gone" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_signup_final" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_signup_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="95dip"
+                android:layout_height="35dip"
+                android:background="@drawable/btn_signin"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Already Registered ?"
+                android:textColor="@color/text_signup_bottom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnWithGuest"
+                android:layout_width="95dip"
+                android:layout_height="35dip"
+                android:background="@drawable/btn_cancel"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Continue as Guest"
+                android:textColor="@color/text_signup_bottom" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.belwadi.sciencefun.view.HyIconView
+        android:id="@+id/imgVideoThumb"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:gravity="center"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dip" >
+
+        <ImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/icon_delete"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iconDefault"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_toLeftOf="@+id/imgDelete"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_star" />
+    </RelativeLayout>
+
+</RelativeLayout>

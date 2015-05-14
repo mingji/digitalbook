@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:background="@color/background_gray"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_gravity="right"
+        android:layout_margin="8dip"
+        android:background="@drawable/btn_close" >
+    </Button>
+
+    <RelativeLayout
+        android:id="@+id/layVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:layout_marginBottom="30dip" >
+
+        <fragment
+            android:id="@+id/youtube_fragment"
+            android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layReference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:background="@drawable/repo_content_grayborder" >
+
+        <com.belwadi.sciencefun.view.HyIconView
+            android:id="@+id/imgRefIcon"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="7dip"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtRefName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgRefIcon"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/imgRefIcon"
+            android:text="Cell Division"
+            android:textColor="@color/darkgray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtRefDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRefName"
+            android:layout_below="@+id/txtRefName"
+            android:layout_marginLeft="15dip"
+            android:paddingBottom="3dip"
+            android:paddingTop="5dip"
+            android:text="Wikipedia"
+            android:textColor="@color/darkgray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtRefUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRefName"
+            android:layout_below="@+id/txtRefDescription"
+            android:layout_marginLeft="15dip"
+            android:autoLink="web"
+            android:paddingBottom="7dip"
+            android:paddingTop="5dip"
+            android:text="http://wikipedia.com"
+            android:textColor="@color/blue"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:background="@drawable/repo_content_grayborder" >
+
+        <LinearLayout
+            android:id="@+id/layNoteUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="7dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.belwadi.sciencefun.view.HyIconView
+                android:id="@+id/imgNoteUser"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:gravity="center"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtNoteUserName"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:text="Belwadi"
+                android:textColor="@color/darkgray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNoteDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/layNoteUser"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@+id/layNoteUser"
+            android:text="12 Sep 2014"
+            android:textColor="@color/darkgray"
+            android:textSize="12sp" />
+
+        <com.belwadi.sciencefun.view.AutosizeTextView
+            android:id="@+id/txtNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtNoteDate"
+            android:layout_below="@+id/txtNoteDate"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="7dip"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:paddingBottom="7dip"
+            android:paddingTop="7dip"
+            android:singleLine="false"
+            android:text="CELL DIVISION\nThis is mynotes about a feild trip where we went to a labaratory and observed cell division through microscope."
+            android:textColor="@color/darkgray"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

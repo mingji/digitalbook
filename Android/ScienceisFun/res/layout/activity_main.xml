@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_gray">
+<!-- 
+    <FrameLayout
+        android:id="@+id/frmDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/laytopTitle"
+        android:background="@color/lightgray" />
+     -->
+    <com.belwadi.sciencefun.view.CustomViewPager
+        android:id="@+id/vpPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/laytopTitle"
+        android:background="@color/lightgray">
+    </com.belwadi.sciencefun.view.CustomViewPager>
+
+    <LinearLayout
+        android:id="@+id/layMenu"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/laytopTitle"  >
+        <include
+            android:id="@+id/viewMenu"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            layout="@layout/view_menu" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+             />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/laytopTitle" >
+    </FrameLayout>
+    
+    <RelativeLayout
+        android:id="@+id/laytopTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include
+            android:id="@+id/viewtopTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_titlebar" />
+    </RelativeLayout>
+
+</RelativeLayout>

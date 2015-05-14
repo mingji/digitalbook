@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtConceptName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="15dip"
+        android:text="Cell Division"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lstConceptNote"
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:layout_below="@+id/txtConceptName"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#00000000" />
+
+    <RelativeLayout
+        android:id="@+id/layAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lstConceptNote"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="7dip"
+        android:layout_marginTop="10dip" >
+
+        <EditText
+            android:id="@+id/txtAddNote"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/grayborder"
+            android:hint="@string/note_hint"
+            android:paddingLeft="7.0dip"
+            android:paddingRight="35.0dip"
+            android:singleLine="false"
+            android:textColor="@color/darkgray"
+            android:textColorHint="#ffcccccc"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imgAddNote"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignBottom="@+id/txtAddNote"
+            android:layout_alignRight="@+id/txtAddNote"
+            android:layout_margin="3dip"
+            android:src="@drawable/icon_pen" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/layAddNote"
+        android:layout_marginTop="5dip"
+        android:background="@color/lightgray" />
+
+    <ImageView
+        android:id="@+id/imgAddLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/layAddNote"
+        android:layout_below="@+id/lstConceptNote"
+        android:layout_marginRight="30dip"
+        android:src="@drawable/lock" />
+
+</RelativeLayout>

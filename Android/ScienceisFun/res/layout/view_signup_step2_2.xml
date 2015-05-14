@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/layStep2_2Detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:background="@color/transparent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/labelYourschool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Your School"
+            android:textColor="@color/darkgray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/labelSchoolName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelYourschool"
+            android:layout_marginTop="20dip"
+            android:text="School Name : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtSchoolName"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelSchoolName"
+            android:layout_marginLeft="25dip"
+            android:layout_toRightOf="@+id/labelSchoolName"
+            android:hint="School Name"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelSchoolAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelSchoolName"
+            android:layout_marginTop="30dip"
+            android:text="Address : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtSchoolAddr"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelSchoolAddr"
+            android:layout_alignLeft="@+id/txtSchoolName"
+            android:layout_toRightOf="@+id/labelSchoolAddr"
+            android:hint="Address"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelSchoolCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelSchoolAddr"
+            android:layout_marginTop="30dip"
+            android:text="City : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtSchoolCity"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelSchoolCity"
+            android:layout_alignLeft="@+id/txtSchoolName"
+            android:layout_toRightOf="@+id/labelSchoolCity"
+            android:hint="City"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelSchoolPostCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelSchoolCity"
+            android:layout_marginTop="30dip"
+            android:text="Postal Code : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtSchoolPostalCode"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelSchoolPostCode"
+            android:layout_alignLeft="@+id/txtSchoolName"
+            android:layout_toRightOf="@+id/labelSchoolPostCode"
+            android:hint="Postal Code"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/layCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelSchoolPostCode"
+            android:layout_marginTop="30dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/labelSchoolCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country : "
+                android:textColor="@color/darkgray"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinCountry"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/bg_spinner"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnStep22Next"
+            android:layout_width="80dip"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_sign_next" />
+
+        <ImageButton
+            android:id="@+id/btnStep22Prev"
+            android:layout_width="80dip"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/btn_sign_prev" />
+    </RelativeLayout>
+
+</RelativeLayout>

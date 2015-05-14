@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="ViewHolder">
+        <ignore path="src/com/belwadi/sciencefun/ui/UpdatesFragment.java" />
+    </issue>
+</lint>

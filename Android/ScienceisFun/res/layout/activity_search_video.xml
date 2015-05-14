@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/laytopTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_home" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/back_arrow_g" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/btnBack"
+            android:text="Search Video"
+            android:textColor="@color/darkgray"
+            android:textSize="20sp" />
+
+        <com.belwadi.sciencefun.view.HyIconView
+            android:id="@+id/imgUserIcon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dip"
+            android:src="@drawable/guest_g" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnBack"
+            android:layout_marginBottom="7dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/imgUserIcon"
+            android:maxWidth="80dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/guest"
+            android:textColor="@color/title_name"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layGuestMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laytopTitle"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/repo_content_grayborder"
+        android:padding="7.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txtGuestMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="You have not enrolled in any class. \nTo add a video, Sign in  or  Sign up for Free"
+            android:textColor="@color/darkgray"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/laySearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/laytopTitle"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/txtSearchVideo"
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="25dip"
+            android:hint="Search Video"
+            android:paddingLeft="7.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnSearchVideo"
+            android:layout_width="25dip"
+            android:layout_height="30dip"
+            android:layout_alignBaseline="@+id/txtSearchVideo"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@+id/txtSearchVideo"
+            android:background="@drawable/icon_search" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_below="@+id/txtSearchVideo"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/lightgray" />
+
+        <ListView
+            android:id="@+id/lstVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view1"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#00000000"
+            android:fillViewport="true"
+            android:focusable="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</RelativeLayout>

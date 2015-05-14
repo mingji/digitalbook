@@ -1,0 +1,361 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/layTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_home" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="28dip"
+            android:layout_height="28dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/back_arrow_g" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/btnBack"
+            android:text="School"
+            android:textColor="@color/title_logo"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imgUserIcon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dip"
+            android:src="@drawable/empty_pic" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnBack"
+            android:layout_marginRight="7dip"
+            android:layout_toLeftOf="@+id/imgUserIcon"
+            android:maxWidth="100dip"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:text="Tejas"
+            android:textColor="@color/title_name"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="70dip"
+        android:layout_height="35dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_signup"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="70dip"
+        android:layout_height="35dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:layout_toLeftOf="@+id/btnCancel"
+        android:background="@drawable/btn_signup"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/layManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="School Not Found"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtManualSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="2dip"
+            android:text="@string/edit_school_manual"
+            android:textColor="@color/grade_blue"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/laySearchDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layManualDetail"
+        android:layout_below="@+id/layTop"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/labelYourschool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your School:"
+            android:textColor="@color/darkgray"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtSelectedSchoolName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelYourschool"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/grade_blue"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtSelectedSchoolAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSelectedSchoolName"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/grade_blue"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnSearchSchool"
+            android:layout_width="25dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtSelectedSchoolAddr"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/icon_search" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtSearchName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnSearchSchool"
+            android:layout_toLeftOf="@+id/btnSearchSchool"
+            android:completionThreshold="2"
+            android:hint="Search by Name or Address"
+            android:paddingLeft="7.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnDisplaySchool"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignRight="@+id/btnSearchSchool"
+            android:layout_below="@+id/btnSearchSchool"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_map" />
+
+        <RelativeLayout
+            android:id="@+id/layDisplaySchools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnSearchSchool"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:layout_toLeftOf="@+id/btnDisplaySchool" >
+
+            <ListView
+                android:id="@+id/lstSchool"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:descendantFocusability="beforeDescendants"
+                android:divider="#00000000"
+                android:visibility="visible" />
+
+            <fragment
+                android:id="@+id/mapSchool"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layManualDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCancel"
+        android:layout_below="@+id/layTop"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/labelYourschool2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Your School"
+            android:textColor="@color/darkgray"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/labelSchoolName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelYourschool2"
+            android:layout_marginTop="20dip"
+            android:text="School Name : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtSchoolName"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelSchoolName"
+            android:layout_marginLeft="25dip"
+            android:layout_toRightOf="@+id/labelSchoolName"
+            android:hint="School Name"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelSchoolAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelSchoolName"
+            android:layout_marginTop="30dip"
+            android:text="Address : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtSchoolAddr"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelSchoolAddr"
+            android:layout_alignLeft="@+id/txtSchoolName"
+            android:layout_toRightOf="@+id/labelSchoolAddr"
+            android:hint="Address"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelSchoolCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelSchoolAddr"
+            android:layout_marginTop="30dip"
+            android:text="City : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtSchoolCity"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelSchoolCity"
+            android:layout_alignLeft="@+id/txtSchoolName"
+            android:layout_toRightOf="@+id/labelSchoolCity"
+            android:hint="City"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelSchoolPostCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelSchoolCity"
+            android:layout_marginTop="30dip"
+            android:text="Postal Code : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtSchoolPostalCode"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelSchoolPostCode"
+            android:layout_alignLeft="@+id/txtSchoolName"
+            android:layout_toRightOf="@+id/labelSchoolPostCode"
+            android:hint="Postal Code"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/layCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelSchoolPostCode"
+            android:layout_marginTop="30dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/labelSchoolCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country : "
+                android:textColor="@color/darkgray"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinCountry"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/bg_spinner"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

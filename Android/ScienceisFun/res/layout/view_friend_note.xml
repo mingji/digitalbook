@@ -1,0 +1,316 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:text="Cell Division"
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dip"
+            android:background="@drawable/repo_content_grayborder" >
+
+            <ImageView
+                android:id="@+id/imgLock"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dip"
+                android:src="@drawable/icon_tick" />
+
+            <LinearLayout
+                android:id="@+id/layNoteUser1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginTop="7dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgNoteUser1"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/empty_pic" />
+
+                <TextView
+                    android:id="@+id/txtNoteUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:text="Tejas sirgh"
+                    android:textColor="@color/darkgray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtNoteDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/layNoteUser1"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@+id/layNoteUser1"
+                android:text="12 Sep 2014"
+                android:textColor="@color/darkgray"
+                android:textSize="12sp" />
+
+            <com.belwadi.sciencefun.view.AutosizeTextView
+                android:id="@+id/txtTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtNoteDate1"
+                android:layout_below="@+id/txtNoteDate1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:paddingBottom="7dip"
+                android:paddingTop="7dip"
+                android:singleLine="false"
+                android:text="CELL DIVISION\nThis is mynotes about a feild trip where we went to a labaratory and observed cell division through microscope."
+                android:textColor="@color/darkgray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dip"
+            android:background="@drawable/repo_content_grayborder" >
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dip"
+                android:src="@drawable/icon_invite" />
+
+            <LinearLayout
+                android:id="@+id/layNoteUser2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginTop="7dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgNoteUser2"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/empty_pic" />
+
+                <TextView
+                    android:id="@+id/txtNoteUserName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:text="Tejas sirgh"
+                    android:textColor="@color/darkgray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtNoteDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/layNoteUser2"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@+id/layNoteUser2"
+                android:text="12 Sep 2014"
+                android:textColor="@color/darkgray"
+                android:textSize="12sp" />
+
+            <com.belwadi.sciencefun.view.AutosizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtNoteDate2"
+                android:layout_below="@+id/txtNoteDate2"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:paddingBottom="7dip"
+                android:paddingTop="7dip"
+                android:singleLine="false"
+                android:text="CELL DIVISION\nThis is mynotes about a feild trip where we went to a labaratory and observed cell division through microscope."
+                android:textColor="@color/darkgray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:text="Parasite plants"
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dip"
+            android:background="@drawable/repo_content_grayborder" >
+
+            <ImageView
+                android:id="@+id/imgLock2"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dip"
+                android:src="@drawable/icon_tick" />
+
+            <LinearLayout
+                android:id="@+id/layNoteUser3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginTop="7dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgNoteUser3"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/empty_pic" />
+
+                <TextView
+                    android:id="@+id/txtNoteUserName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:text="Tejas sirgh"
+                    android:textColor="@color/darkgray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtNoteDate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/layNoteUser3"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@+id/layNoteUser3"
+                android:text="10 Sep 2014"
+                android:textColor="@color/darkgray"
+                android:textSize="12sp" />
+
+            <com.belwadi.sciencefun.view.AutosizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtNoteDate3"
+                android:layout_below="@+id/txtNoteDate3"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:paddingBottom="7dip"
+                android:paddingTop="7dip"
+                android:singleLine="false"
+                android:text="PARASITE PLANTS\nThis is mynotes about a feild trip where we went to a labaratory and observed cell division through microscope."
+                android:textColor="@color/darkgray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dip"
+            android:background="@drawable/repo_content_grayborder" >
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dip"
+                android:src="@drawable/icon_invite" />
+
+            <LinearLayout
+                android:id="@+id/layNoteUser4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginTop="7dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgNoteUser4"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/empty_pic" />
+
+                <TextView
+                    android:id="@+id/txtNoteUserName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:text="Tejas sirgh"
+                    android:textColor="@color/darkgray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtNoteDate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/layNoteUser4"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@+id/layNoteUser4"
+                android:text="11 Sep 2014"
+                android:textColor="@color/darkgray"
+                android:textSize="12sp" />
+
+            <com.belwadi.sciencefun.view.AutosizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtNoteDate4"
+                android:layout_below="@+id/txtNoteDate4"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:paddingBottom="7dip"
+                android:paddingTop="7dip"
+                android:singleLine="false"
+                android:text="PARASITE PLANTS\nThis is mynotes about a feild trip where we went to a labaratory and observed cell division through microscope."
+                android:textColor="@color/darkgray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

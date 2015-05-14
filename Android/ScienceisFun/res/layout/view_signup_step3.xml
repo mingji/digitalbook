@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/layStep3Detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:background="@color/transparent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/labelYourboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Your Board"
+            android:textColor="@color/darkgray"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinSyllabus"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_below="@+id/labelYourboard"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/bg_spinner"
+            android:gravity="center_vertical"
+            android:paddingLeft="7dip" />
+
+        <TextView
+            android:id="@+id/labelYourclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinSyllabus"
+            android:layout_marginTop="20dip"
+            android:text="Your Class"
+            android:textColor="@color/darkgray"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/layGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelYourclass"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/labelGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grade : "
+                android:textColor="@color/darkgray"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinGrade"
+                android:layout_width="100dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="45dip"
+                android:background="@drawable/bg_spinner"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="5dip"
+                android:text=" th Grade"
+                android:textColor="@color/darkgray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelClassRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layGrade"
+            android:layout_marginTop="25dip"
+            android:text="Classroom : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtClassroom"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelClassRoom"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/labelClassRoom"
+            android:hint="Section / Room"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btnStep3Next"
+            android:layout_width="80dip"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_sign_next"
+            android:padding="5dip" />
+
+        <ImageButton
+            android:id="@+id/btnStep3Prev"
+            android:layout_width="80dip"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/btn_sign_prev"
+            android:padding="5dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

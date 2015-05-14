@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/layStep4Detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:background="@color/transparent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/labelDescript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Almost Done"
+            android:textColor="@color/darkgray"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgUserPic"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_below="@+id/labelDescript"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/empty_pic" />
+        
+        <ImageView
+            android:id="@+id/btnEditPic"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignRight="@+id/imgUserPic"
+            android:layout_alignBottom="@+id/imgUserPic"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_edit" />
+        
+        <TextView
+            android:id="@+id/txtFinalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgUserPic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:text="Tom James"
+            android:textSize="14sp" />
+        
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="95dip"
+            android:layout_height="35dip"
+            android:layout_below="@+id/txtFinalName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:background="@color/grade_orange"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+    </RelativeLayout>    
+
+</RelativeLayout>

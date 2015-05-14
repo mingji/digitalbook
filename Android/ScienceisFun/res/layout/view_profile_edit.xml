@@ -1,0 +1,338 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <TextView
+        android:id="@+id/txtEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dip"
+        android:gravity="center"
+        android:text="Edit Profile"
+        android:textColor="@color/darkgray"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelYourname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEditProfile"
+        android:layout_marginTop="20dip"
+        android:text="Name : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editYourname"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelYourname2"
+        android:layout_marginLeft="40dip"
+        android:layout_toRightOf="@+id/labelYourname2"
+        android:inputType="textNoSuggestions"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="Tejas"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/labelSchoolname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelYourname2"
+        android:layout_marginTop="30dip"
+        android:text="School : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editSchoolname"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelSchoolname2"
+        android:layout_alignLeft="@+id/editYourname"
+        android:layout_toRightOf="@+id/labelSchoolname2"
+        android:inputType="textNoSuggestions"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="National Public School"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnGoSchool"
+        android:layout_width="40dip"
+        android:layout_height="22dip"
+        android:layout_alignBaseline="@+id/labelSchoolname2"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/editSchoolname"
+        android:background="@drawable/btn_go_school" />
+
+    <LinearLayout
+        android:id="@+id/laySyllabus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSchoolname2"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelSyllabus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Board : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinSyllabus"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="45dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/bg_spinner"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip" />        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laySyllabus"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelGrade2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grade : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinGrade"
+            android:layout_width="100dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="45dip"
+            android:background="@drawable/bg_spinner"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="5dip"
+            android:text=" th Grade"
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/labelClass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layGrade"
+        android:layout_marginTop="30dip"
+        android:text="Section : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editSection"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelClass2"
+        android:layout_alignLeft="@+id/editYourname"
+        android:layout_toRightOf="@+id/labelClass2"
+        android:inputType="textNoSuggestions"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="C-5"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/labelPic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelClass2"
+        android:layout_marginTop="20dip"
+        android:text="Picture : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <com.belwadi.sciencefun.view.HyIconView
+        android:id="@+id/imgUserPic2"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_below="@+id/labelPic2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/empty_pic" />
+
+    <ImageView
+        android:id="@+id/imgEditPic"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignBottom="@+id/imgUserPic2"
+        android:layout_alignRight="@+id/imgUserPic2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_edit" />
+
+    <TextView
+        android:id="@+id/labelSchoolAddr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgUserPic2"
+        android:layout_marginTop="30dip"
+        android:text="Address : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editSchoolAddr"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelSchoolAddr2"
+        android:layout_alignLeft="@+id/editYourname"
+        android:layout_toRightOf="@+id/labelSchoolAddr2"
+        android:inputType="textNoSuggestions"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="Karamanagalo"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelSchoolCity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSchoolAddr2"
+        android:layout_marginTop="30dip"
+        android:text="City : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editSchoolCity"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelSchoolCity2"
+        android:layout_alignLeft="@+id/editYourname"
+        android:layout_toRightOf="@+id/labelSchoolCity2"
+        android:inputType="textNoSuggestions"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="Bangolore"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelSchoolCode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSchoolCity2"
+        android:layout_marginTop="30dip"
+        android:text="Postal Code : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editSchoolCode"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelSchoolCode2"
+        android:layout_alignLeft="@+id/editYourname"
+        android:layout_toRightOf="@+id/labelSchoolCode2"
+        android:inputType="textNoSuggestions"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="AAA-BBB"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelCountry2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSchoolCode2"
+        android:layout_marginTop="30dip"
+        android:text="Country : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editCountry"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelCountry2"
+        android:layout_alignLeft="@+id/editYourname"
+        android:layout_toRightOf="@+id/labelCountry2"
+        android:inputType="textNoSuggestions"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="India"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelMail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelCountry2"
+        android:layout_marginTop="30dip"
+        android:text="E-Mail : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editMail"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelMail2"
+        android:layout_alignLeft="@+id/editYourname"
+        android:layout_toRightOf="@+id/labelMail2"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="tejas@example.com"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnCancelProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/labelMail2"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/btn_signup"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnSaveProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_below="@+id/labelMail2"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="30dip"
+        android:layout_toLeftOf="@+id/btnCancelProfile"
+        android:background="@drawable/btn_signup"
+        android:text="Save Profile"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

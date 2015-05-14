@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/layStep1Detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@color/transparent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/labelYourName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Name : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtYourName"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelYourName"
+            android:layout_below="@+id/layStepNum"
+            android:layout_marginLeft="40dip"
+            android:layout_toRightOf="@+id/labelYourName"
+            android:hint="First and Last Name"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelMailAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelYourName"
+            android:layout_marginTop="30dip"
+            android:text="E-Mail : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtEmailAddr"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelMailAddr"
+            android:layout_alignLeft="@+id/txtYourName"
+            android:layout_below="@+id/txtYourName"
+            android:layout_toRightOf="@+id/labelMailAddr"
+            android:hint="example@example.com"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelMailAddr"
+            android:layout_marginTop="30dip"
+            android:text="Password : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelPassword"
+            android:layout_below="@+id/labelMailAddr"
+            android:layout_toRightOf="@+id/labelPassword"
+            android:layout_marginLeft="50dip"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelConfirmPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelPassword"
+            android:layout_marginTop="30dip"
+            android:text="Confirm Password : "
+            android:textColor="@color/darkgray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/txtConfirmPassword"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelConfirmPasswd"
+            android:layout_alignLeft="@+id/txtPassword"
+            android:layout_below="@+id/txtPassword"
+            android:layout_toRightOf="@+id/labelConfirmPasswd"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/labelHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelConfirmPasswd"
+            android:layout_marginTop="25dip"
+            android:layout_marginLeft="10dip"
+            android:text="Password should have minimum length of 6 chars."
+            android:textColor="@color/darkgray"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btnStep1Next"
+            android:layout_width="80dip"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="5dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_sign_next" />
+    </RelativeLayout> 
+
+</RelativeLayout>

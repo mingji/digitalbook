@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+    
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"
+        android:src="@drawable/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="12dip"
+        android:layout_marginTop="17dip"
+        android:text="ScienceisFun"
+        android:textSize="22sp"
+        android:textColor="@color/darkgray"
+        />
+    
+    <TextView
+        android:id="@+id/txtVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="15dip"
+        android:text="Version : 1.0"
+        android:textSize="18sp"
+        android:textColor="@color/darkgray"
+        />
+    
+    <TextView
+        android:id="@+id/txtUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVersion"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="15dip"
+        android:text="www.scienceisfun.org"
+        android:textSize="18sp"
+        />
+    
+</RelativeLayout>

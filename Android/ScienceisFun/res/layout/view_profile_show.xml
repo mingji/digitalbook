@@ -1,0 +1,289 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <TextView
+        android:id="@+id/txtProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"        
+        android:layout_margin="5dip"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@color/darkgray"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelYourname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProfile"
+        android:layout_marginTop="20dip"
+        android:text="Name : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtYourname"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelYourname"
+        android:layout_marginLeft="40dip"
+        android:layout_toRightOf="@+id/labelYourname"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="Tejas"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/labelSchoolname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelYourname"
+        android:layout_marginTop="30dip"
+        android:text="School : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtSchoolname"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelSchoolname"
+        android:layout_alignLeft="@+id/txtYourname"
+        android:layout_toRightOf="@+id/labelSchoolname"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="National Public School"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/labelSyllabus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSchoolname"
+        android:layout_marginTop="30dip"
+        android:text="Board : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtSyllabus"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelSyllabus"
+        android:layout_alignLeft="@+id/txtYourname"
+        android:layout_toRightOf="@+id/labelGrade"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="Sample Syllabus"
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/labelGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSyllabus"
+        android:layout_marginTop="30dip"
+        android:text="Grade : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtGrade"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelGrade"
+        android:layout_alignLeft="@+id/txtYourname"
+        android:layout_toRightOf="@+id/labelGrade"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="5th Grade"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/labelClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelGrade"
+        android:layout_marginTop="30dip"
+        android:text="Section : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtSection"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelClass"
+        android:layout_alignLeft="@+id/txtYourname"
+        android:layout_toRightOf="@+id/labelClass"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="C-5"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/labelPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelClass"
+        android:layout_marginTop="20dip"
+        android:text="Picture : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <com.belwadi.sciencefun.view.HyIconView
+        android:id="@+id/imgUserPic"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_below="@+id/labelPic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/empty_pic" />
+
+    <TextView
+        android:id="@+id/labelSchoolAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgUserPic"
+        android:layout_marginTop="30dip"
+        android:text="Address : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/txtSchoolAddr"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelSchoolAddr"
+        android:layout_alignLeft="@+id/txtYourname"
+        android:layout_toRightOf="@+id/labelSchoolAddr"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="Karamanagalo"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelSchoolCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSchoolAddr"
+        android:layout_marginTop="30dip"
+        android:text="City : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/txtSchoolCity"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelSchoolCity"
+        android:layout_alignLeft="@+id/txtYourname"
+        android:layout_toRightOf="@+id/labelSchoolCity"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="Bangolore"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelSchoolCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSchoolCity"
+        android:layout_marginTop="30dip"
+        android:text="Postal Code : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/txtSchoolCode"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelSchoolCode"
+        android:layout_alignLeft="@+id/txtYourname"
+        android:layout_toRightOf="@+id/labelSchoolCode"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="AAA-BBB"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSchoolCode"
+        android:layout_marginTop="30dip"
+        android:text="Country : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/txtCountry"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelCountry"
+        android:layout_alignLeft="@+id/txtYourname"
+        android:layout_toRightOf="@+id/labelCountry"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="India"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelCountry"
+        android:layout_marginTop="30dip"
+        android:text="E-Mail : "
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtMail"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelMail"
+        android:layout_alignLeft="@+id/txtYourname"
+        android:layout_toRightOf="@+id/labelMail"
+        android:editable="false"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:text="tejas@example.com"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/labelMail"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/btn_signup"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/laytopTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_alignParentTop="true" >
+
+        <com.belwadi.sciencefun.view.HyIconView
+            android:id="@+id/imgUserIcon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"            
+            android:src="@drawable/guest_g" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgUserIcon"
+            android:layout_marginRight="7dip"
+            android:layout_toLeftOf="@+id/imgUserIcon"
+            android:singleLine="true"
+            android:text="@string/guest"
+            android:textColor="@color/title_name"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" >
+
+            <Spinner
+                android:id="@+id/spinSyllabus"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/bg_spinner"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/spinSyllabus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnLogo"
+                    android:layout_width="70dip"
+                    android:layout_height="50dip"
+                    android:background="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="8dip"
+                    android:text="Science Is Fun"
+                    android:textColor="@color/title_logo"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4" >
+
+            <GridView
+                android:id="@+id/gridGrade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:horizontalSpacing="30dip"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" >
+            </GridView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

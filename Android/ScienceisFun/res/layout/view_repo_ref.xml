@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:text="Cell Division"
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dip"
+        android:background="@drawable/repo_content_grayborder" >
+
+        <ImageView
+            android:id="@+id/imgRefIcon"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/icon_ref" />
+
+        <TextView
+            android:id="@+id/txtRefName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgRefIcon"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/imgRefIcon"
+            android:text="Cell Division"
+            android:textColor="@color/darkgray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRefName"
+            android:layout_below="@+id/txtRefName"
+            android:layout_marginLeft="15dip"
+            android:paddingBottom="7dip"
+            android:paddingTop="7dip"
+            android:text="Wikipedia.com"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:autoLink="web" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/icon_star" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dip"
+        android:background="@drawable/repo_content_grayborder" >
+
+        <ImageView
+            android:id="@+id/imgRefIcon2"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/icon_ref" />
+
+        <TextView
+            android:id="@+id/txtRefName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgRefIcon2"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/imgRefIcon2"
+            android:text="Cell Division"
+            android:textColor="@color/darkgray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRefName2"
+            android:layout_below="@+id/txtRefName2"
+            android:layout_marginLeft="15dip"
+            android:paddingBottom="7dip"
+            android:paddingTop="7dip"
+            android:text="www.google.com"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:autoLink="web" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="7dip" >
+
+        <EditText
+            android:id="@+id/txtAddRef1"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/grayborder"
+            android:hint="@string/ref_hint"
+            android:paddingLeft="7.0dip"
+            android:singleLine="false"
+            android:textColor="@color/darkgray"
+            android:textColorHint="#ffcccccc"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignBottom="@+id/txtAddRef1"
+            android:layout_alignRight="@+id/txtAddRef1"
+            android:layout_margin="3dip"
+            android:src="@drawable/icon_pen" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:text="Parasite plants"
+        android:textColor="@color/darkgray"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dip"
+        android:background="@drawable/repo_content_grayborder" >
+
+        <ImageView
+            android:id="@+id/imgRefIcon3"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/icon_ref" />
+
+        <TextView
+            android:id="@+id/txtRefName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgRefIcon3"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/imgRefIcon3"
+            android:text="Parasite plants"
+            android:textColor="@color/darkgray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRefName3"
+            android:layout_below="@+id/txtRefName3"
+            android:layout_marginLeft="15dip"
+            android:paddingBottom="7dip"
+            android:paddingTop="7dip"
+            android:text="Wikipedia.com"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:autoLink="web" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/icon_star" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="7dip" >
+
+        <EditText
+            android:id="@+id/txtAddRef3"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/grayborder"
+            android:hint="@string/ref_hint"
+            android:paddingLeft="7.0dip"
+            android:singleLine="false"
+            android:textColor="@color/darkgray"
+            android:textColorHint="#ffcccccc"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignBottom="@+id/txtAddRef3"
+            android:layout_alignRight="@+id/txtAddRef3"
+            android:layout_margin="3dip"
+            android:src="@drawable/icon_pen" />
+    </RelativeLayout>
+</LinearLayout>
